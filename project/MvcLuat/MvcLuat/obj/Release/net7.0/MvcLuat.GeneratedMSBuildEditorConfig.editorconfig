@@ -1,0 +1,201 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MvcLuat
+build_property.RootNamespace = MvcLuat
+build_property.ProjectDir = D:\00. Learn\04. BTL\00. C#\BTL_CSharp_Group_4\project\MvcLuat\MvcLuat\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\00. Learn\04. BTL\00. C#\BTL_CSharp_Group_4\project\MvcLuat\MvcLuat
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Admin/ArticleDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXJ0aWNsZURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Admin/ArticleEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXJ0aWNsZUVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Admin/ChapterDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2hhcHRlckRlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Admin/ChapterEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2hhcHRlckVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Admin/display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZGlzcGxheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Admin/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Admin/SectionCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VjdGlvbkNyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Admin/SectionDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VjdGlvbkRlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Admin/SectionEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VjdGlvbkVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Articles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Articles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Articles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Articles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Articles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Chapters/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcHRlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Chapters/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcHRlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Chapters/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcHRlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Chapters/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcHRlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Chapters/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcHRlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Home/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleDIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Sections/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Sections/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Sections/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Sections/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Sections/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Shared/Components/AdminIndexArticle/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5JbmRleEFydGljbGVcZGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Shared/Components/AdminIndexChapter/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5JbmRleENoYXB0ZXJcZGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Shared/Components/indexArticle/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcaW5kZXhBcnRpY2xlXGRlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Shared/Components/indexChapter/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcaW5kZXhDaGFwdGVyXGRlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Users/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/00. Learn/04. BTL/00. C\#/BTL_CSharp_Group_4/project/MvcLuat/MvcLuat/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3unifzmrgd

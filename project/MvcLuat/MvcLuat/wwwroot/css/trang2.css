@@ -1,0 +1,146 @@
+
+@import url(trang1new.css);
+
+.box_body {
+    max-width: 1300px;
+    margin: 20px auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fdfdfd;
+}
+
+/* .box_chapter{
+    height: 100px;
+    width: 1000px;
+    background-color: #2d2929;
+    text-shadow: 4px 6px 11px 5px #ff0101;
+} */
+.chapter {
+    background-color: rgb(170, 219, 245);
+    margin: 10px;
+    margin-right: 600px;
+    border-bottom: 1px solid black;
+    box-shadow: 0 8px 6px -6px black;
+    font-size: 150%;
+}
+
+.box_arti {
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    background-color: bisque;
+}
+
+.arti {
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.content_arti {
+    margin: 7px;
+    font-weight: lighter;
+}
+
+
+.news-item {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    animation: slide-up 1s ease;
+}
+
+h2 {
+    font-size: 110%;
+}
+
+.news-item:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.news-item:nth-child(odd) {
+    background-color: #c8ced5;
+}
+
+.news-item:nth-child(even) {
+    background-color: #a3bde8;
+}
+
+.news-item .category {
+    color: #fff;
+    background-color: #f27b53;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* .news-item .category.politics {
+    background-color: #5c8bc8;
+  }
+
+  .news-item .category.sports {
+    background-color: #62a95f;
+  }
+
+  .news-item .category.entertainment {
+    background-color: #d6478a;
+  }
+
+  .news-item .category:hover {
+    opacity: 0.8;
+  } */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.box_money_phat {
+    display: flex;
+    margin-top: 15px;
+}
+
+
+.small_space {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.khung_xu {
+    margin: 10px;
+    margin-left: 100px;
+    padding: 10px;
+    background-color: #98e6ed;
+}
+
+.muc_xu {
+    margin: 10px;
+    padding: 10px;
+    background-color: #98e6ed;
+}
+

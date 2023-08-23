@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MvcLuat.Models.Section>
+
+<head>
+    <link rel="stylesheet" href="./css/trang2.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="box_body">
+            <div class="box_chapter">
+                <div class="chapter">
+                    CHAPTER: ÁP DỤNG XỬ PHẠT VI PHẠM HÀNH CHÍNH 
+                </div>
+            </div>
+            <div clas="box_arti">
+                <div class="arti">
+                    <u>Điều 6: Áp dụng xử phạt vi phạm hành chính</u>
+                    <p class="content_arti">CONTENT CỦA ĐIỀU 6</p>
+                </div>
+                @foreach(var item in Model){
+                    <div class="news-item">
+                    <h2>Khoản 1</h2>
+                    
+                    <p>Đây là nội dung của khoản 1.</p>
+                    <p>Một đoạn văn bản khác.</p>
+                    <div class="box_money_phat">
+                        <div class="khung_xu">Khung xử phạt: </div>
+                        <div class="small_space"></div>
+                        <div class="muc_xu">Mức xử phạt</div>
+                    </div>
+                  </div>
+                }
+                
+                  
+            </div>
+
+    
+        </div>
+        
+
+    </div>
+    <div class="duong_ke"></div>
+
+    <div class="box_gioithieu">
+        
+        <div class="nhom_tt">
+            <div class="name_1">NHÓM THỰC HIỆN</div>
+            <div></div>
+            <ul class="tv_nhom">
+                <li class="tv_chil">Vũ Ngọc Văn </li>
+                <li class="tv_chil">Tô Văn Anh Quân</li>
+                <li class="tv_chil">Nguyễn Thái Bảo</li>
+                <li class="tv_chil">Hoàng Văn Vinh</li>
+            </ul>
+        </div>
+    </div>
+</body>

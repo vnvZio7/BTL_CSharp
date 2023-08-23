@@ -1,0 +1,152 @@
+﻿<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+/* chỉnh sửa tiêu đề */
+    h1{
+        text-align: center;
+        font-size: 45px;
+    }
+    h3 {
+        text-align: center;
+    }
+    h1, h2 {
+        margin-bottom: 13px;
+    }
+ /* thu nhỏ container */
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 40px;
+        text-align: left;
+    }
+        .container label,
+        .container input[type="text"],
+        .container input[type="password"],
+        .container button
+        /*.container input[type="checkbox"]*/ {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+.container {
+  padding: 16px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+</style>
+
+@model User 
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Đăng nhập</h1>
+<h3>Vui lòng đăng nhập để tiếp tục</h3>
+
+@using (Html.BeginForm("Login", "Account",FormMethod.Post))
+{
+
+
+    <div class="container">
+        <label for="uname"><b>Tài khoản</b></label>
+        @Html.TextBoxFor(m=>m.Email, new {@placeholder = "Email"})
+
+        <label for="psw"><b>Mật khẩu</b></label>
+        @Html.TextBoxFor(m=>m.PassWord, new {@placeholder = "Nhập mật khẩu"})
+
+
+        <button type="submit">Login</button>
+
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div>
+    if (ViewBag.LoginStatus != null && ViewBag.LoginStatus == 0)
+    {
+        <div style="color: red; background-color: white;">
+            <p>
+                Nhập sai tài khoản hoặc mật khẩu rồi!!! không nhập được chặt mẹ tay đi!!!
+            </p>
+
+        </div>
+    }
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+}

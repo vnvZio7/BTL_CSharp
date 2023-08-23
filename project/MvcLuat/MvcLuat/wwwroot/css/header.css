@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+.logo{
+    position: relative;
+}
+.img_logo{
+    height: 100px;
+}
+.toolbar{
+    width: 100%;
+}
+.toolbar_top{
+    display: flex;
+    width: 100%;
+    background-color: rgb(64, 79, 80);
+}
+.toolbar_bot{
+    background-color: rgb(178, 196, 228);
+    height: 35px;
+}
+.toolbar_bot p{
+    position: relative;
+    padding: 0 30px;
+    font-size: 20px;
+}
+
+.title{
+    width: 70%;
+    height: 65px;
+}
+.title p{
+    position: relative;
+    padding: 10px 30px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.nav{
+    display: flex;
+    width: 30%;
+    height: 65px;
+    padding: 13px;
+}
+.home{
+    position: relative;
+    width: 45px;
+    font-size: 30px;
+    transform: translateY(-5px);
+}
+.home i {
+    color: white;
+}
+.find{
+    width: 280px;
+    height: 33px;
+}
+.find_input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.find_input[type=text]:focus{
+    background-color: rgb(244, 192, 174);
+    color: black;
+}
+.setting{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+.setting i{
+    font-size: 30px;
+    padding: 3px;
+    padding-left: 10px;
+    cursor: pointer;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #bab6b6;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+      color: rgb(132, 0, 255);
+      padding: 5px 16px;
+      text-decoration: none;
+      display: block;
+}
+    
+ .dropdown-content a:hover {background-color: #f1f1f1;    color: black;    }
+  
+.setting:hover .dropdown-content {
+    display: block;
+}
+  
+.main{
+    position: relative;
+}

@@ -1,0 +1,47 @@
+﻿
+
+@{
+    ViewData["Title"] = "Admin Page";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<head>
+
+    <link rel="stylesheet" href="./css/trang1new.css">
+
+    <script>
+        function hienThiNoiDung(id) {
+            var noiDung = document.getElementById(id);
+            if (noiDung.style.display === "none") {
+                noiDung.style.display = "block";
+            } else {
+                noiDung.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="box_muc">
+            @await Component.InvokeAsync("AdminIndexChapter")
+        </div>
+        <div class="duong_ke"></div>
+
+        <div class="box_gioithieu">
+            
+            <div class="nhom_tt">
+                <div class="name_1">NHÓM THỰC HIỆN</div>
+                <div></div>
+                <ul class="tv_nhom">
+                    <li class="tv_chil">Vũ Ngọc Văn </li>
+                    <li class="tv_chil">Tô Văn Anh Quân</li>
+                    <li class="tv_chil">Nguyễn Thái Bảo</li>
+                    <li class="tv_chil">Hoàng Văn Vinh</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+</body>

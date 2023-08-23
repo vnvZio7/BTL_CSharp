@@ -1,0 +1,74 @@
+﻿@model MvcLuat.Models.Section
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<div>
+    <h4>Section</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Content)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Content)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Min)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Min)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Max)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Max)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Avg)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Avg)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreateTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreateTime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UpdateTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UpdateTime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DecreeID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DecreeID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Article)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Article.ID)
+        </dd>
+    </dl>
+    <h2>Bạn có chắc muốn xóa khoản @Model.ID không?</h2>
+    <form asp-action="SectionDelete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a href="/Admin/Index/@Model.ArticleID">Cancel</a>
+    </form>
+</div>

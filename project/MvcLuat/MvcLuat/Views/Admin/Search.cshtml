@@ -1,0 +1,501 @@
+﻿@model MvcLuat.Models.Section
+
+@{
+    ViewData["Title"] = "Search";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<head>
+    <link rel="stylesheet" href="~/css/trang2.css">
+    <style>
+            h1 {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+li :hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.li_con {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 1.8%;
+    text-align: center;
+    font-size: large;
+    /* display: list-item; */
+    align-items: end;
+    /* margin-left: 50px; */
+    /* border: 1px solid #b1154a; */
+    /* text-align: left; */
+    /* height:50px;
+    width: 935px; */
+    cursor: pointer;
+    color: rgb(10, 10, 9);
+    /* text-decoration: unset;
+    text-align: start;
+    text-align: center; */
+    border-radius: 10px;
+    /* background: url(paper.gif); */
+    background-position: left top;
+    background-repeat: repeat;
+    transition: 0.3s all;
+}
+
+    .li_con:hover {
+        box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+    }
+
+.box_muc {
+    max-width: 1100px;
+    margin: 20px auto;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease;
+    animation: slide-up 1s ease;
+    /* border:1px solid black; */
+    border-radius: 10px;
+}
+
+
+
+.img1 {
+    height: 10px;
+    width: 20px;
+}
+
+.noi_dung {
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+    .noi_dung:hover {
+        background-color: rgb(178, 196, 228);
+    }
+
+.print_dieu {
+    /* max-width: 800px; */
+    margin: 30px;
+    /* padding: 9px;
+    border: 1px solid black ; */
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    /* border-radius: 5px; */
+    color: black;
+    /* background-color: #ffffff; */
+    /* margin-left: 20px;
+    max-width: 900px;
+    padding: 1%;
+    border: 1px solid black;
+    text-align: left;
+    background-color: rgb(235, 229, 229);
+    font-size: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px; */
+}
+
+.tach {
+    padding: 10px 0;
+}
+
+.print_dieu :hover {
+}
+
+.duong_ke {
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: 1px solid black;
+}
+
+.box_gioithieu {
+    margin-top: 1%;
+    background-color: rgb(178, 196, 228);
+}
+
+.nhom_tt {
+    margin-left: 100px;
+    padding: 2%;
+}
+
+.name_1 {
+    font-weight: bold;
+}
+
+.tv_nhom {
+    padding: 5px;
+}
+
+.tv_chil {
+    padding: 3px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    position: relative;
+}
+
+.img_logo {
+    height: 100px;
+}
+
+.toolbar {
+    width: 100%;
+}
+
+.toolbar_top {
+    display: flex;
+    width: 100%;
+    background-color: rgb(64, 79, 80);
+}
+
+.toolbar_bot {
+    background-color: rgb(178, 196, 228);
+    height: 35px;
+}
+
+    .toolbar_bot p {
+        position: relative;
+        padding: 5px 30px;
+        font-size: 20px;
+    }
+
+.title {
+    width: 70%;
+    height: 65px;
+}
+
+    .title p {
+        position: relative;
+        padding: 15px 30px;
+        font-size: 25px;
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+.nav {
+    display: flex;
+    width: 30%;
+    height: 65px;
+    padding: 13px;
+}
+
+.home {
+    position: relative;
+    width: 45px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.find {
+    width: 280px;
+    height: 33px;
+}
+
+.find_input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+    .find_input[type=text]:focus {
+        background-color: rgb(244, 192, 174);
+        color: black;
+    }
+
+.setting {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+    .setting i {
+        font-size: 30px;
+        padding: 3px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #bab6b6;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: rgb(132, 0, 255);
+        padding: 5px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+.setting:hover .dropdown-content {
+    display: block;
+}
+
+.main {
+    position: relative;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+.li_con i{
+    font-size: 20px;
+}
+
+                    .box_xingtu{
+                display: block;
+                text-align: right;
+                padding: 5px;
+                text-align: right;
+              }
+
+            .edit_but {
+              text-decoration: none;
+              border-radius: 20px;
+              padding: 5px;
+              margin: 0 5px;
+              background-image: linear-gradient(
+                to right,
+                #25aae1,
+                #40cbe4,
+                #dd30c3,
+                #b62b73
+                );
+              color: rgb(225, 247, 255);
+              box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+              transition: all 0.4s ease-in-out;
+            }
+
+            .delete_but {
+              text-decoration: none;
+              border-radius: 20px;
+              padding: 5px;
+              margin: 0 5px;
+              background-image: linear-gradient(
+                to right,
+                #25aae1,
+                #40cbe4,
+                #dd30c3,
+                #b62b73
+                );
+              color: #fff;
+              box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+              transition: all 0.4s ease-in-out;
+            }
+            .box_body {
+    max-width: 1300px;
+    margin: 20px auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fdfdfd;
+}
+
+/* .box_chapter{
+    height: 100px;
+    width: 1000px;
+    background-color: #2d2929;
+    text-shadow: 4px 6px 11px 5px #ff0101;
+} */
+.chapter {
+    background-color: rgb(170, 219, 245);
+    margin: 10px;
+    margin-right: 600px;
+    border-bottom: 1px solid black;
+    box-shadow: 0 8px 6px -6px black;
+    font-size: 150%;
+}
+
+.box_arti {
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    background-color: bisque;
+}
+
+.arti {
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.content_arti {
+    margin: 7px;
+    font-weight: lighter;
+}
+
+
+.news-item {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    animation: slide-up 1s ease;
+}
+
+h2 {
+    font-size: 110%;
+}
+
+.news-item:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.news-item:nth-child(odd) {
+    background-color: #c8ced5;
+}
+
+.news-item:nth-child(even) {
+    background-color: #a3bde8;
+}
+
+.news-item .category {
+    color: #fff;
+    background-color: #f27b53;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* .news-item .category.politics {
+    background-color: #5c8bc8;
+  }
+
+  .news-item .category.sports {
+    background-color: #62a95f;
+  }
+
+  .news-item .category.entertainment {
+    background-color: #d6478a;
+  }
+
+  .news-item .category:hover {
+    opacity: 0.8;
+  } */
+
+
+.box_money_phat {
+    display: flex;
+    margin-top: 15px;
+}
+
+
+.small_space {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.khung_xu {
+    margin: 10px;
+    margin-left: 100px;
+    padding: 10px;
+    background-color: #98e6ed;
+}
+
+.muc_xu {
+    margin: 10px;
+    padding: 10px;
+    background-color: #98e6ed;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="box_body">
+            
+            <div clas="box_arti">
+                <h3>Kết quả tìm kiếm cho: "@ViewBag.Value1"</h3>
+                
+                @foreach(var item in ViewBag.Value2){
+                    <div class="news-item">
+                        <div class="box_xingtu">
+                        <a class="edit_but" href="/Admin/SectionEdit/@(item.ID)">Chỉnh sửa</a>
+                        <!-- <br> -->
+                        <a class="delete_but" href="/Admin/SectionDelete/@(item.ID)">Xóa</a>
+                    </div>
+                    <h2>Khoản @item.ID</h2>
+                    
+                    <p>@item.Content</p>
+                        @if(@item.Min.Equals((string)"NA") != true)
+                        {
+                        <div class="box_money_phat">
+                        <div class="khung_xu">Khung xử phạt: @item.Min - @item.Max</div>
+                        <div class="small_space"></div>
+                        <div class="muc_xu">Mức xử phạt: @item.Avg</div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div style="height:20px">   </div>
+                        }
+                    </div>
+                }
+                
+                  
+            </div>
+
+    
+        </div>
+        
+
+    </div>
+    <div class="duong_ke"></div>
+
+    <div class="box_gioithieu">
+        
+        <div class="nhom_tt">
+            <div class="name_1">NHÓM THỰC HIỆN</div>
+            <div></div>
+            <ul class="tv_nhom">
+                <li class="tv_chil">Vũ Ngọc Văn </li>
+                <li class="tv_chil">Tô Văn Anh Quân</li>
+                <li class="tv_chil">Nguyễn Thái Bảo</li>
+                <li class="tv_chil">Hoàng Văn Vinh</li>
+            </ul>
+        </div>
+    </div>
+</body>

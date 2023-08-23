@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/header.css">
+    <link rel="icon" type="image/x-icon" href="./image/logonew.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .box_box{
+    float: right;
+}
+
+.box_xingtu{
+    
+    display: block;
+    text-align: right;
+    padding: 5px;
+    
+  }
+
+.edit_but {
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 0 5px;
+  background-image: linear-gradient(
+    to right,
+    #d7edf7,
+    #c0eff7,
+    #f3bbea,
+    #f1afd1
+    );
+  color: rgb(0, 0, 0);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  transition: all 0.4s ease-in-out;
+  
+}
+
+.delete_but {
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 0 5px;
+  background-image: linear-gradient(
+    to right,
+    #d7edf7,
+    #c0eff7,
+    #f3bbea,
+    #f1afd1
+    );
+  color: #000000;
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  transition: all 0.4s ease-in-out;
+  
+}
+.but_hover:hover{
+    background-image: linear-gradient(
+    to left,
+    #d7edf7,
+    #c0eff7,
+    #f3bbea,
+    #f1afd1
+    );
+    box-shadow: #f78fe6 0 0 15px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/Account"><img class="img_logo" src="~/image/logoAdmin.jpg" alt="logo_page"></a>
+        </div>
+        <div class="toolbar">
+            <div class="toolbar_top">
+                <div class="title">
+                    <p>HỖ TRỢ QUÁ TRÌNH XỬ PHẠT HÀNH CHÍNH LĨNH VỰC LÂM NGHIỆP</p>
+                </div>
+                <div class="nav">
+                    <a class="home" href="/Account"><i class="fa-solid fa-house"></i></a>
+
+                    <form class="find" action="/Admin/Search" method="post">
+                        <input id="searchQuery" name="searchQuery" class="find_input" type="text" placeholder="Tìm kiếm">
+                        
+                        <a  style="margin-left: -32px;" href=""><button type="submit" style="font-size: 22px;"><i style="transform: translateY(2px);" class="fa-solid fa-magnifying-glass"></i></button></a>
+                    </form>
+                    <div class="setting">
+                        <i class="fa-solid fa-gear"></i>
+                        <div class="dropdown-content">
+                        <a href="Account/Login">Đăng xuất</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="toolbar_bot">
+                <p>Nhanh hơn, thuận tiện hơn</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

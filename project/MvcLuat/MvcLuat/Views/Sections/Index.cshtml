@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewData["Title"] = "Thông tin điều luật";
+}
+
+
+<head>
+    <link rel="stylesheet" href="./css/trang2.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="box_body">
+            <div class="box_chapter">
+                <div class="chapter">
+                    CHAPTER: @ViewBag.Value2
+                </div>
+            </div>
+            <div clas="box_arti">
+                <div class="arti">
+                    <u>@ViewBag.Value3.Title</u>
+                    @if(ViewBag.Value3.Content.Equals("NA") == false)
+                    {
+                        <p class="content_arti">@ViewBag.Value3.Content</p>
+                    }
+                </div>
+                @foreach(var item in ViewBag.Value1){
+                    <div class="news-item">
+                    <h2>Khoản @item.ID</h2>
+                    
+                    <p>@item.Content</p>
+                        @if(@item.Min.Equals((string)"NA") != true)
+                        {
+                        <div class="box_money_phat">
+                        <div class="khung_xu">Khung xử phạt: @item.Min - @item.Max</div>
+                        <div class="small_space"></div>
+                        <div class="muc_xu">Mức xử phạt: @item.Avg</div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div style="height:20px">   </div>
+                        }
+                    </div>
+                }
+                
+                  
+            </div>
+
+    
+        </div>
+        
+
+    </div>
+    <div class="duong_ke"></div>
+
+    <div class="box_gioithieu">
+        
+        <div class="nhom_tt">
+            <div class="name_1">NHÓM THỰC HIỆN</div>
+            <div></div>
+            <ul class="tv_nhom">
+                <li class="tv_chil">Vũ Ngọc Văn </li>
+                <li class="tv_chil">Tô Văn Anh Quân</li>
+                <li class="tv_chil">Nguyễn Thái Bảo</li>
+                <li class="tv_chil">Hoàng Văn Vinh</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
